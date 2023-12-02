@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt</title>
+    <style>
+        body {
+            height: 100vh;
+            background-color: aqua;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'PT Serif', serif;
+            font-family: 'Life Savers', serif;
+            font-family: 'Petit Formal Script', cursive;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .main {
+            height: 65%;
+            width: 40%;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .top {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 85%;
+            padding: 50px;
+            text-align: center;
+        }
+
+        .bottom {
+            height: 15%;
+            width: 100%;
+            display: flex;
+        }
+
+        h1 {
+            color: red;
+        }
+
+        p {
+            line-height: 200%;
+            font-weight: bold;
+        }
+
+        button {
+            height: 100%;
+            width: 50%;
+            border: none;
+        }
+
+        .confirm {
+            background-color: red;
+            color: white;
+        }
+
+        img {
+            height: 100px;
+        }
+
+        @media (max-width: 680px) {
+            .main {
+                width:100%;
+            }
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Life+Savers&family=PT+Serif&family=Petit+Formal+Script&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <div class="top">
+            <img src="./warning.png" alt="warning">
+       <h1>Are You Sure?</h1>
+       <p>If you proceed, you will lose all of your personal data. Are you sure that you want to delete your account?</p>
+     </div>
+     <div class="bottom">
+       <button>Cancel</button>
+       <button class="confirm">Confirm</button>
+     </div>
+    </div>
+</body>
+</html>
